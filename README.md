@@ -11,6 +11,15 @@ A simple weather application built with HTML, CSS, and JavaScript that provides 
 - Search for locations by city name
 - Responsive design for mobile and desktop
 
+## Screenshots
+
+Check out the application in action:
+
+1. **Search Interface** - The main search page where users enter the city name
+2. **Weather Results** - Displaying current conditions and 3-day forecast for the selected location
+
+Screenshots are available in the [screenshots](./screenshots) directory.
+
 ## Technologies
 
 - HTML5
