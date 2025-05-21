@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PJay Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PJay Weather App</h1>
+        </header>
+        
+        <!-- City search form -->
+        <div id="search-container" class="active">
+            <div class="search-box">
+                <h2>Enter City Name</h2>
+                <div class="input-group">
+                    <input type="text" id="city-input" placeholder="e.g., London, New York, Tokyo">
+                    <button id="search-btn">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Weather display section -->
+        <div id="weather-container" class="hidden">
+            <div class="back-btn-container">
+                <button id="back-btn">
+                    <i class="fas fa-arrow-left"></i> Back to Search
+                </button>
+            </div>
+            
+            <div id="current-weather" class="weather-card">
+                <h2 id="city-name">City Name</h2>
+                <div class="weather-info">
+                    <div class="weather-icon">
+                        <img id="weather-icon" src="" alt="Weather Icon">
+                    </div>
+                    <div class="weather-details">
+                        <h3 id="current-date">Date</h3>
+                        <div class="temperature">
+                            <span id="temperature">--</span>°C
+                        </div>
+                        <div class="condition" id="weather-condition">Weather Condition</div>
+                        <div class="extra-info">
+                            <div>
+                                <i class="fas fa-tint"></i>
+                                <span id="humidity">--</span>% Humidity
+                            </div>
+                            <div>
+                                <i class="fas fa-wind"></i>
+                                <span id="wind-speed">--</span> km/h
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="forecast-title">3-Day Forecast</h3>
+            <div id="forecast-container" class="forecast-cards">
+                <!-- Forecast cards will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Created by PJay Weather App | Powered by OpenWeatherMap API</p>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html> 
